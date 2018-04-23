@@ -1,0 +1,49 @@
+<html>
+<head>
+  <script src="phaser.min.js"></script>
+  <script src="game.js"></script>
+  <script src="start.js"></script>
+  <script src="gameAI.js"></script>
+  <script src="howtoplay.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <style>
+body {
+   margin: 0px 0px;
+}
+  </style>
+  <script>
+  var game = new Phaser.Game(1200, 800, Phaser.AUTO, 'phaser-example');
+  /*{
+    preload: preload,
+    create: create,
+    update: update,
+    render: render
+   });
+   */
+        game.state.add('Start', Start);
+				game.state.add('Game', Game);
+        game.state.add('Aiplay', Aiplay);
+        game.state.add('Howtoplay', Howtoplay);
+				game.state.start('Start');
+
+        var player;
+        var ball;
+        var ping;
+        var groupz;
+        var cursors;
+        var button;
+        var pad1;
+        var color;
+        var score;
+        var score_counter;
+        var pausemenu;
+        var unpausemenu;
+        var menuz;
+        var tween;
+
+  </script>
+</body>
+</html>
